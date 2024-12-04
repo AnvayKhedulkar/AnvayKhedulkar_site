@@ -1,0 +1,142 @@
+.resume-info-box {
+  background-color: rgba(255, 255, 255, 0); /* Transparent background */
+  border-radius: 6px;
+  padding: 1rem;
+  color: #ffdbff; /* Text color */
+  box-shadow: 0 4px 8px rgba(50, 49, 49, 0.58);
+  border: 1px solid white; /* Optional: white border for emphasis */
+  margin-bottom: 1rem; /* Padding between the box and footer */
+}
+
+.resume-info-box h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #ffdbff; /* Section headings */
+}
+
+.resume-section {
+  margin-bottom: 1.5rem;
+}
+
+.resume-info-box h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+  color: #ffdbff99; /* Subsection headings */
+}
+
+.resume-info-box p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #ffdbff99; /* Text color */
+}
+
+.resume-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: left; /* Centering the sections */
+  margin-top: 2rem; /* Spacing from other content */
+}
+
+.resume-section {
+  width: 200%; /* Full width for the section */
+  max-width: 1160px; /* Limit the width for readability */
+  margin: 1rem 0; /* Spacing between sections */
+  padding: 1rem; /* Padding inside the section */
+  background-color: rgba(255, 255, 255, 0.033); /* Background color for sections */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.144); /* Shadow effect */
+}
+
+.subheading-box {
+  margin-top: 1rem; /* Space above the subheading box */
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.096); /* Slightly different background for subheadings */
+  border-radius: 4px; /* Rounded corners */
+}
+
+.subheading-box h3 {
+  color: #ffffff;
+  text-decoration: none;
+  align-content: center;
+}
+
+.subheading-box h3:hover {
+  color: #da75f699;
+  align-content: center;
+}
+
+.company-link {
+  display: flex;
+  align-items: center; /* Align logo and text vertically */
+  text-decoration: none; /* Remove underline from the link */
+  color: rgb(255, 255, 255); /* Text color */
+}
+
+.company-logo {
+  width: 45px; /* Adjust size of logo */
+  height: 30px; /* Adjust size of logo */
+  margin-right: 10px; /* Space between logo and text */
+  padding-left: 1em;
+}
+
+.company-link span {
+  font-size: 16px; /* Adjust text size */
+  font-weight: bold; /* Optional, makes the text bold */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .resume-info-container {
+    padding: 0.5rem; /* Add some padding on small screens */
+  }
+
+  .resume-section {
+    width: 100%; /* Full width for smaller screens */
+    max-width: none; /* Remove width limit */
+    padding: 0.5rem; /* Adjust padding */
+  }
+
+  .resume-info-box h2 {
+    font-size: 1.25rem; /* Adjust heading size for smaller screens */
+  }
+
+  .resume-info-box h3 {
+    font-size: 1rem; /* Adjust subsection heading size */
+  }
+
+  .resume-info-box p {
+    font-size: 0.9rem; /* Adjust text size for readability */
+  }
+
+  .company-link span {
+    font-size: 14px; /* Adjust text size for smaller screens */
+  }
+
+  .company-logo {
+    width: 25px; /* Make logo smaller */
+    height: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .resume-info-box h2 {
+    font-size: 1.2rem; /* Smaller headings */
+  }
+
+  .resume-info-box h3 {
+    font-size: 0.9rem; /* Smaller subsection headings */
+  }
+
+  .resume-info-box p {
+    font-size: 0.85rem; /* Smaller text for better readability */
+  }
+
+  .company-link span {
+    font-size: 12px; /* Smaller text size */
+  }
+
+  .company-logo {
+    width: 20px; /* Even smaller logo */
+    height: 20px;
+  }
+}

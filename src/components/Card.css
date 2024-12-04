@@ -1,0 +1,45 @@
+.card {
+  background-color: #3e005f;
+  border: 1px solid #ffdbff;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 10em;
+  text-align: center;
+  color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.card button {
+  background-color: #ff009e;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background-color: #e60089;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .card {
+      width: 80%; /* Adjust width for smaller screens */
+      padding: 1rem; /* Keep the padding consistent */
+  }
+
+  .card button {
+      padding: 0.7rem; /* Adjust button size for better accessibility */
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+      width: 90%; /* Make the card almost full width on very small screens */
+  }
+
+  .card button {
+      width: 100%; /* Make the button span the width of the card */
+  }
+}

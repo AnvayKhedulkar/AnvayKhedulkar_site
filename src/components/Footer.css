@@ -1,0 +1,37 @@
+.footer {
+  width: 100%;
+  padding: 1rem; /* Add padding on all sides */
+  background-color: #3e005f;
+  color: #ffdbff;
+  text-align: left;
+  border-top: 1px solid #ffdbff;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.footer h2 {
+  font-size: 1.5rem;
+  color: #ffdbff;
+  margin-bottom: 0.5rem;
+}
+
+.footer p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #e1e1ff;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .footer {
+    padding: 1rem; /* Keep the padding for small screens */
+    text-align: center; /* Center align text on small screens */
+  }
+
+  .footer h2 {
+    font-size: 1.25rem; /* Slightly smaller heading on mobile */
+  }
+
+  .footer p {
+    font-size: 0.9rem; /* Slightly smaller text for better readability */
+  }
+}

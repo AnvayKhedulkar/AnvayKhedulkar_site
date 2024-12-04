@@ -1,0 +1,197 @@
+.App {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  min-height: 200vh; /* Simulate more content to allow scrolling */
+  color: white;
+  padding: 1rem;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Galaxy background */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: radial-gradient(circle at 50% 50%, #2c003e, #1b0032, #000020);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: radial-gradient(2px 2px at 20% 20%, #ffffff, transparent),
+    radial-gradient(1px 1px at 60% 60%, #ffffff, transparent),
+    radial-gradient(2px 2px at 90% 90%, #ffffff, transparent),
+    radial-gradient(1px 1px at 70% 30%, #ffffff, transparent),
+    radial-gradient(1px 1px at 80% 70%, #ffffff, transparent),
+    radial-gradient(1px 1px at 40% 50%, #ffffff, transparent),
+    radial-gradient(2px 2px at 30% 40%, #ffffff, transparent),
+    radial-gradient(1px 1px at 40% 90%, #ffffff, transparent),
+    radial-gradient(1px 1px at 10% 50%, #ffffff, transparent),
+    radial-gradient(3px 3px at 40% 10%, #ffffff, transparent),
+    radial-gradient(1px 1px at 55% 85%, #ffffff, transparent),
+    radial-gradient(1px 1px at 80% 80%, #ffffff, transparent),
+    radial-gradient(3px 3px at 70% 90%, #ffffff, transparent),
+    radial-gradient(1px 1px at 20% 10%, #ffffff, transparent),
+    radial-gradient(2px 2px at 5% 5%, #ffffff, transparent),
+    radial-gradient(1px 1px at 90% 10%, #ffffff, transparent),
+    radial-gradient(2px 2px at 80% 45%, #ffffff, transparent),
+    radial-gradient(1px 1px at 30% 70%, #ffffff, transparent),
+    radial-gradient(1px 1px at 40% 60%, #ffffff, transparent),
+    radial-gradient(4px 4px at 50% 50%, #ffffff, transparent),
+    radial-gradient(1px 1px at 55% 30%, #ffffff, transparent),
+    radial-gradient(2px 2px at 55% 80%, #ffffff, transparent),
+    radial-gradient(1px 1px at 30% 85%, #ffffff, transparent),
+    radial-gradient(2px 2px at 75% 10%, #ffffff, transparent),
+    radial-gradient(3px 3px at 75% 10%, #ffffff, transparent),
+    radial-gradient(1px 1px at 20% 20%, #ffffff, transparent),
+    radial-gradient(3px 3px at 10% 40%, #ffffff, transparent),
+    radial-gradient(1px 1px at 15% 60%, #ffffff, transparent),
+    radial-gradient(2px 2px at 25% 40%, #ffffff, transparent),
+    radial-gradient(1px 1px at 30% 65%, #ffffff, transparent),
+    radial-gradient(1px 1px at 45% 70%, #ffffff, transparent),
+    radial-gradient(3px 3px at 10% 90%, #ffffff, transparent),
+    radial-gradient(1px 1px at 10% 30%, #ffffff, transparent),
+    radial-gradient(2px 2px at 30% 20%, #ffffff, transparent),
+    radial-gradient(3px 3px at 70% 10%, #ffffff, transparent),
+    radial-gradient(2px 2px at 85% 60%, #ffffff, transparent),
+    radial-gradient(1px 1px at 90% 70%, #ffffff, transparent),
+    radial-gradient(1px 1px at 95% 55%, #ffffff, transparent),
+    radial-gradient(2px 2px at 85% 65%, #ffffff, transparent),
+    radial-gradient(3px 3px at 90% 70%, #ffffff, transparent),
+    radial-gradient(1px 1px at 80% 80%, #ffffff, transparent),
+    radial-gradient(2px 2px at 70% 90%, #ffffff, transparent),
+    radial-gradient(3px 3px at 25% 95%, #ffffff, transparent);
+  
+  opacity: 0.6;
+  pointer-events: none;
+  z-index: 0;
+}
+
+@keyframes twinkling {
+  0%, 100% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+.cards-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+
+main {
+  flex: 1; /* This pushes the footer to the bottom */
+  margin-top: 135px; /* Offset to avoid overlapping with the top bar */
+  position: relative;
+}
+
+footer {
+  padding-top: 1rem;
+}
+
+.top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 145px; /* Adjust height as needed */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
+  z-index: 10; /* Ensure it's above everything else */
+}
+
+/* Adjust the rotating feature */
+.rotating-feature {
+  position: fixed; /* Keeps it fixed on the screen */
+  top: 10px; /* Position it near the top */
+  left: 50%;
+  transform: translateX(-50%); /* Center it */
+  width: 100px; /* Adjust size as needed */
+  z-index: 11; /* Above the top bar */
+}
+
+.moon-wrapper {
+  position: absolute;
+  top: -40px; /* Adjust the position to place it above the top bar */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 11; /* Ensure it's above the top bar */
+}
+
+/* Galaxy background adjustments for smaller screens */
+@media (max-width: 768px) {
+  body {
+    background-attachment: scroll; /* Disable fixed background on smaller screens */
+  }
+
+  .top-bar {
+    height: 100px; /* Smaller top bar for mobile */
+  }
+
+  .rotating-feature {
+    width: 60px; /* Reduce size for mobile */
+    top: 5px; /* Adjust position */
+  }
+
+  .cards-container {
+    gap: 0.5rem; /* Reduce the gap between cards on mobile */
+  }
+
+  main {
+    margin-top: 80px; /* Reduced margin for mobile */
+  }
+
+  .App-header {
+    font-size: calc(12px + 2vmin); /* Slightly larger text on smaller screens */
+  }
+
+  body::before {
+    opacity: 0.3; /* Less opacity on smaller screens */
+  }
+}
