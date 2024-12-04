@@ -1,6 +1,6 @@
 import React from 'react';
 import './Header.css';
-import profileImage from 'src/Assests/IMG_0396.JPG'; // Add your profile image path here
+import profileImage from 'src/Assests/photo.png'; // Add your profile image path here
 
 function Header({ name, introduction, title, degree }) {
   return (
